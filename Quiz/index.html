@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container-quiz {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      padding: 20px;
+      border-radius: 20px;
+      width: 600px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+    }
+    #mainHeading {
+      text-decoration: underline;
+      margin-bottom: 20px;
+      font-size: 38px;
+    }
+    
+    .que {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .options {
+      margin: 20px 0px;
+    }
+
+    .options  > button {
+      width: 100%;
+      margin: 10px 0px;
+      height: 50px;
+      border: none;
+      background-color: #292930;
+      border-radius: 20px;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+    }
+.startScreen {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      padding: 20px;
+      border-radius: 20px;
+}
+.startbtn {
+   width: 100%;
+      margin: 10px 0px;
+      height: 50px;
+      border: none;
+      background-color: #292930;
+      border-radius: 20px;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+}
+
+.startbtn:hover {
+  background-color: #000;
+  transition: 0.3s;
+}
+.hidden {
+  display: none;
+}
+.endScreen {
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      padding: 20px;
+      border-radius: 20px;
+}
+
+  </style>
+</head>
+<body>
+  
+<div class="startScreen ">
+   <div >
+      <h1 id="mainHeading">
+      JavaScript Quiz App
+    </h1>
+
+    <div class="btn">
+      <button class="startbtn" onclick="startQuiz()">Start</button>
+    </div>
+</div>
+</div>
+
+<div class="main">
+
+</div>
+
+<div class="endScreen hidden">
+  <div >
+      <h1 id="mainHeading">
+     Your Result of JavaScript Quiz 4
+    </h1>
+<h1 id="result">
+     
+    </h1>
+    <div class="btn">
+      <button class="startbtn" onclick="RetartQuiz(this)">Restart Quiz</button>
+    </div>
+</div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
