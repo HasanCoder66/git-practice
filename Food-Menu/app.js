@@ -128,3 +128,28 @@ shakeBtn.addEventListener("click", function () {
 menuHandler("shake")
 })
 searchBtn.addEventListener("click", searchHandler)
+
+
+
+function myName (cb) {
+
+    console.log(cb)    /// function -->
+
+    cb("hasan")
+}
+
+
+myName(printName)   ///arguement
+
+
+
+
+
+function printName (name) {
+    console.log(name)
+}
+
+// printName("hasan")  ///hasan
+
+// high order function konsy hoty hain 
+// esa functio jo apny arguement mai 1 function accept kerta hai wo higher order function hai 
